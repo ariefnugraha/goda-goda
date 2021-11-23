@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+//colors
+$red: #c61214;
+$black: #2c2c2c;
+$gray: #e1e1e1;
+$white: #fff;
+
+//fonts
+$heading-1: normal normal 600 2.5rem/140% "Poppins", sans-serif;
+$heading-2: normal normal 600 1.25rem/140% "Poppins", sans-serif;
+$heading-3: normal normal normal 1.25rem/140% "Poppins", sans-serif;
+$regular: normal normal normal 1rem/140% "Poppins", sans-serif;
+$small: normal normal normal 0.75rem/140% "Poppins", sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+
+// mixin
+@mixin mx-80 {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+@mixin mx-30 {
+  margin-left: 1.875rem;
+  margin-right: 1.875rem;
+}
+
+@mixin mx-20 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+@mixin my-20 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+@mixin px-20 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@mixin py-20 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+body {
+  font: $regular;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+input {
+  padding: 0.625rem 1.25rem;
+  border: solid 1px $gray;
+  outline: none;
+  border-radius: 5px;
+}
+
+nav {
+  @include px-20;
+  @include py-20;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 1px $gray;
+  .logo {
+    width: 10rem;
+    height: 2rem;
+    display: block;
+    background: url("../images/logo.png") no-repeat;
+    background-size: contain;
+  }
+
+  ul {
+    position: fixed;
+    top: 3.5rem;
+    bottom: 0;
+    right: -31.25rem;
+    transition: 0.5s;
+    background: $red;
+    padding: 1.25rem;
+    color: $white;
+    li {
+      display: block;
+      margin-bottom: 0.625rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: $white;
+      }
+
+      button {
+        color: $white;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    justify-content: flex-start;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    
+    .logo {
+        background-size: 100% 100%;
+        height: 2.5rem;
+    }
+    ul {
+      position: static;
+      background: transparent;
+      color: $black;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 1.875rem;
+      padding: 0;
+      li {
+        display: inline-block;
+        margin-bottom: 0;
+
+        &:nth-child(2) {
+          @include mx-20;
+        }
+        a {
+          color: $black;
+          font-weight: bold;
+
+          &.active {color: $red;}
+        }
+
+        form {
+          position: relative;
+          width: 18.75rem;
+
+          input {
+              width: 100%;
+              padding-top: 0.938rem;
+              padding-bottom: 0.938rem;
+          }
+        }
+
+        button {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          color: $red;
+          right: 1.25rem;
+        }
+      }
+    }
+
+    #open-menu {
+      display: none;
+    }
+  }
+}
