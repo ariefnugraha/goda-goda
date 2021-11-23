@@ -9,6 +9,13 @@ body {
   margin: 0;
 }
 
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
 ul {
   list-style: none;
 }
@@ -82,6 +89,47 @@ nav ul li button {
   color: #fff;
 }
 
+#hero {
+  min-height: 37.5rem;
+  background: url("../images/bg-hero-mobile.png") no-repeat bottom;
+  background-size: contain;
+  padding-top: 2rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+#hero .title {
+  font: normal normal 600 1.25rem/140% "Poppins", sans-serif;
+  margin-bottom: 0.625rem;
+}
+
+#hero .title span {
+  color: #c61214;
+}
+
+#hero form {
+  background: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  margin-top: 1.25rem;
+  padding: 1.25rem;
+  position: relative;
+}
+
+#hero form input {
+  width: 100%;
+}
+
+#hero form button {
+  width: 100%;
+  background: #c61214;
+  color: #fff;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+}
+
 @media screen and (min-width: 768px) {
   nav {
     -webkit-box-pack: start;
@@ -120,7 +168,7 @@ nav ul li button {
   }
   nav ul li form {
     position: relative;
-    width: 18.75rem;
+    width: 15.625rem;
   }
   nav ul li form input {
     width: 100%;
@@ -137,6 +185,35 @@ nav ul li button {
   }
   nav #open-menu {
     display: none;
+  }
+  #hero {
+    min-height: 600px;
+    background: url("../images/bg-hero.png") no-repeat top right;
+    background-size: contain;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  #hero .title {
+    font: normal normal 600 2.5rem/140% "Poppins", sans-serif;
+  }
+  #hero div {
+    position: relative;
+    top: 3.5rem;
+    width: 40%;
+  }
+  #hero form input {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+  #hero form button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    right: 3rem;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
 }
 /*# sourceMappingURL=style.css.map */

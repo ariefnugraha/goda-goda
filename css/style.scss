@@ -53,6 +53,13 @@ body {
   margin: 0;
 }
 
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
 ul {
   list-style: none;
 }
@@ -114,15 +121,56 @@ nav {
   }
 }
 
+#hero {
+  min-height: 37.5rem;
+  background: url("../images/bg-hero-mobile.png") no-repeat bottom;
+  background-size: contain;
+  padding-top: 2rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+
+  .title {
+    font: $heading-2;
+    span {
+      color: $red;
+    }
+    margin-bottom: 0.625rem;
+  }
+
+  form {
+    background: $white;
+    border-radius: 5px;
+    box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.04),
+      0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04),
+      0px 0px 1px rgba(0, 0, 0, 0.04);
+    margin-top: 1.25rem;
+    padding: 1.25rem;
+    position: relative;
+
+    input {
+      width: 100%;
+    }
+
+    button {
+      width: 100%;
+      background: $red;
+      color: $white;
+      padding: 0.5rem 0;
+      border-radius: 5px;
+      margin-top: 0.5rem;
+    }
+  }
+}
+
 @media screen and (min-width: 768px) {
   nav {
     justify-content: flex-start;
     padding-left: 5rem;
     padding-right: 5rem;
-    
+
     .logo {
-        background-size: 100% 100%;
-        height: 2.5rem;
+      background-size: 100% 100%;
+      height: 2.5rem;
     }
     ul {
       position: static;
@@ -143,17 +191,19 @@ nav {
           color: $black;
           font-weight: bold;
 
-          &.active {color: $red;}
+          &.active {
+            color: $red;
+          }
         }
 
         form {
           position: relative;
-          width: 18.75rem;
+          width: 15.625rem;
 
           input {
-              width: 100%;
-              padding-top: 0.938rem;
-              padding-bottom: 0.938rem;
+            width: 100%;
+            padding-top: 0.938rem;
+            padding-bottom: 0.938rem;
           }
         }
 
@@ -169,6 +219,38 @@ nav {
 
     #open-menu {
       display: none;
+    }
+  }
+
+  #hero {
+    min-height: 600px;
+    background: url("../images/bg-hero.png") no-repeat top right;
+    background-size: contain;
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+    .title {
+        font: $heading-1;
+    }
+    div {
+        position: relative;
+        top: 3.5rem;
+        width: 40%;
+    }
+
+    form {
+        input {
+            @include py-20;
+        }
+        button {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            top: 40%;
+            right: 3rem;
+            transform: translateY(-50%);
+        }
     }
   }
 }
