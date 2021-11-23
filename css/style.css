@@ -130,13 +130,17 @@ nav ul li button {
   margin-top: 0.5rem;
 }
 
+#today .title {
+  font: normal normal 600 1.25rem/140% "Poppins", sans-serif;
+}
+
 @media screen and (min-width: 768px) {
   nav {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
   nav .logo {
     background-size: 100% 100%;
@@ -190,11 +194,8 @@ nav ul li button {
     min-height: 600px;
     background: url("../images/bg-hero.png") no-repeat top right;
     background-size: contain;
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-  #hero .title {
-    font: normal normal 600 2.5rem/140% "Poppins", sans-serif;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
   #hero div {
     position: relative;
@@ -205,9 +206,23 @@ nav ul li button {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
   }
+}
+
+@media screen and (min-width: 992px) {
+  nav {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  #hero {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  #hero .title {
+    font: normal normal 600 2.5rem/140% "Poppins", sans-serif;
+  }
   #hero form button {
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
     border-radius: 50%;
     position: absolute;
     top: 40%;

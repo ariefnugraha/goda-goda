@@ -162,11 +162,17 @@ nav {
   }
 }
 
+#today {
+  .title {
+    font: $heading-2;
+  }
+}
+
 @media screen and (min-width: 768px) {
   nav {
     justify-content: flex-start;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
 
     .logo {
       background-size: 100% 100%;
@@ -226,31 +232,44 @@ nav {
     min-height: 600px;
     background: url("../images/bg-hero.png") no-repeat top right;
     background-size: contain;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
 
-    .title {
-        font: $heading-1;
-    }
     div {
-        position: relative;
-        top: 3.5rem;
-        width: 40%;
+      position: relative;
+      top: 3.5rem;
+      width: 40%;
     }
 
     form {
-        input {
-            @include py-20;
-        }
-        button {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            position: absolute;
-            top: 40%;
-            right: 3rem;
-            transform: translateY(-50%);
-        }
+      input {
+        @include py-20;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  nav {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  
+  #hero {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    .title {
+      font: $heading-1;
+    }
+
+    form button {
+      width: 1.875rem;
+      height: 1.875rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 40%;
+      right: 3rem;
+      transform: translateY(-50%);
     }
   }
 }
