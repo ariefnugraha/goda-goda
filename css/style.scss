@@ -77,6 +77,66 @@ input {
   border-radius: 5px;
 }
 
+a {
+  color: $black;
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+  border-radius: 5px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+}
+
+.card {
+  margin-bottom: 1.25rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  figure {
+    height: 10rem;
+  }
+  .card-desc {
+    margin-top: 0.625rem;
+    h2 {
+      font: $regular;
+      font-weight: bold;
+      color: $black;
+    }
+
+    .card-info {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      margin-top: 0.625rem;
+      font: $small;
+
+      p {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:nth-child(2) {
+          margin-left: 0.625rem;
+          margin-right: 0.625rem;
+        }
+
+        img {
+          display: block;
+          margin-right: 0.313rem;
+        }
+      }
+    }
+  }
+}
+
 nav {
   @include px-20;
   @include py-20;
@@ -163,11 +223,22 @@ nav {
 }
 
 #today {
+  @include px-20;
+  margin-top: 1.875rem;
+
   .title {
     font: $heading-2;
+    font-weight: bold;
+  }
+
+  .list-item {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 1.5rem;
   }
 }
 
+// TABLET
 @media screen and (min-width: 768px) {
   nav {
     justify-content: flex-start;
@@ -229,15 +300,13 @@ nav {
   }
 
   #hero {
-    min-height: 600px;
+    min-height: 200px;
     background: url("../images/bg-hero.png") no-repeat top right;
     background-size: contain;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
 
     div {
-      position: relative;
-      top: 3.5rem;
       width: 40%;
     }
 
@@ -247,17 +316,36 @@ nav {
       }
     }
   }
+
+  .list-item {
+    justify-content: space-between;
+  }
+  .card {
+    width: calc(100% / 2);
+
+    figure {
+      height: 12rem;
+    }
+  }
 }
 
+// DESKTOP
 @media screen and (min-width: 992px) {
   nav {
     padding-left: 5rem;
     padding-right: 5rem;
   }
-  
+
   #hero {
+    min-height: 37.5rem;
     padding-left: 5rem;
     padding-right: 5rem;
+
+    div {
+      position: relative;
+      top: 3.5rem;  
+    }
+    
     .title {
       font: $heading-1;
     }

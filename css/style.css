@@ -33,6 +33,83 @@ input {
   border-radius: 5px;
 }
 
+a {
+  color: #2c2c2c;
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+  border-radius: 5px;
+}
+
+figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+.card {
+  margin-bottom: 1.25rem;
+}
+
+.card:last-child {
+  margin-bottom: 0;
+}
+
+.card figure {
+  height: 10rem;
+}
+
+.card .card-desc {
+  margin-top: 0.625rem;
+}
+
+.card .card-desc h2 {
+  font: normal normal normal 1rem/140% "Poppins", sans-serif;
+  font-weight: bold;
+  color: #2c2c2c;
+}
+
+.card .card-desc .card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.625rem;
+  font: normal normal normal 0.75rem/140% "Poppins", sans-serif;
+}
+
+.card .card-desc .card-info p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card .card-desc .card-info p:nth-child(2) {
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
+}
+
+.card .card-desc .card-info p img {
+  display: block;
+  margin-right: 0.313rem;
+}
+
 nav {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -130,8 +207,26 @@ nav ul li button {
   margin-top: 0.5rem;
 }
 
+#today {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-top: 1.875rem;
+}
+
 #today .title {
   font: normal normal 600 1.25rem/140% "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+#today .list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-top: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -191,20 +286,29 @@ nav ul li button {
     display: none;
   }
   #hero {
-    min-height: 600px;
+    min-height: 200px;
     background: url("../images/bg-hero.png") no-repeat top right;
     background-size: contain;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
   #hero div {
-    position: relative;
-    top: 3.5rem;
     width: 40%;
   }
   #hero form input {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+  .list-item {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .card {
+    width: calc(100% / 2);
+  }
+  .card figure {
+    height: 12rem;
   }
 }
 
@@ -214,8 +318,13 @@ nav ul li button {
     padding-right: 5rem;
   }
   #hero {
+    min-height: 37.5rem;
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+  #hero div {
+    position: relative;
+    top: 3.5rem;
   }
   #hero .title {
     font: normal normal 600 2.5rem/140% "Poppins", sans-serif;
