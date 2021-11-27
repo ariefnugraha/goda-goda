@@ -470,6 +470,7 @@ footer .copyright {
     width: calc((100% / 2) - 1.25rem);
   }
   .card:nth-child(odd) {
+    width: 50%;
     margin-right: 1.25rem;
   }
   .card figure {
