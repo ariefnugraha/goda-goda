@@ -627,5 +627,8 @@ footer .copyright {
   footer .content .company img {
     width: 50%;
   }
+  footer .copyright {
+    font: normal normal normal 1rem/140% "Poppins", sans-serif;
+  }
 }
 /*# sourceMappingURL=style.css.map */
