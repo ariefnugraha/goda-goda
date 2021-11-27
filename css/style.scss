@@ -625,6 +625,9 @@ footer {
 
 // LARGE DESKTOP
 @media screen and (min-width: 1700px) {
+  #hero div {
+    top: 6rem;
+  }
   #list-categories {
     &::before,
     &::after {

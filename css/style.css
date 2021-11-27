@@ -589,6 +589,9 @@ footer .copyright {
 }
 
 @media screen and (min-width: 1700px) {
+  #hero div {
+    top: 6rem;
+  }
   #list-categories::before, #list-categories::after {
     width: 18.75rem;
     height: 18.75rem;
