@@ -546,6 +546,21 @@ footer {
     }
   }
 
+  #today {
+    .card {
+      width: calc((100% / 4) - 1.25rem);
+      margin-right: 1.25rem;
+
+      &:nth-child(odd) {
+        margin-right: 0;
+      }
+
+      &:nth-child(4n + 4) {
+        margin-right: 0;
+      }
+    }
+  }
+
   #list-categories {
     padding-top: 1.875rem;
     padding-bottom: 1.875rem;
@@ -628,6 +643,11 @@ footer {
   #hero div {
     top: 6rem;
   }
+
+  .card figure {
+    height: 15rem;
+  }
+
   #list-categories {
     &::before,
     &::after {
@@ -644,7 +664,13 @@ footer {
     }
   }
 
-  footer .content .company img {
-    width: 50%;
+  footer {
+    .content {
+      align-items: center;
+
+      .company img {
+        width: 50%;
+      }
+    }
   }
 }

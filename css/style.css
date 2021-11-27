@@ -524,6 +524,16 @@ footer .copyright {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
+  #today .card {
+    width: calc((100% / 4) - 1.25rem);
+    margin-right: 1.25rem;
+  }
+  #today .card:nth-child(odd) {
+    margin-right: 0;
+  }
+  #today .card:nth-child(4n + 4) {
+    margin-right: 0;
+  }
   #list-categories {
     padding-top: 1.875rem;
     padding-bottom: 1.875rem;
@@ -592,6 +602,9 @@ footer .copyright {
   #hero div {
     top: 6rem;
   }
+  .card figure {
+    height: 15rem;
+  }
   #list-categories::before, #list-categories::after {
     width: 18.75rem;
     height: 18.75rem;
@@ -601,6 +614,11 @@ footer .copyright {
   }
   #list-categories .list-item figure {
     height: 17.5rem;
+  }
+  footer .content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   footer .content .company img {
     width: 50%;
