@@ -313,6 +313,53 @@ nav ul li button {
   margin-bottom: 1.25rem;
 }
 
+#overview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+#overview figure {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+#overview .caption {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin-top: 1.25rem;
+}
+
+#overview .caption h1 {
+  font: normal normal 600 1.25rem/140% "Poppins", sans-serif;
+}
+
+#overview .caption .info {
+  margin-top: .625rem;
+  font: normal normal normal 0.75rem/140% "Poppins", sans-serif;
+}
+
+#overview .caption .info a {
+  color: #c61214;
+}
+
+#overview .caption .info span {
+  display: inline-block;
+  margin: 0 .313rem;
+}
+
+#overview .caption .info span:last-child {
+  margin: 0;
+}
+
 footer {
   background: #fafafa;
   padding: 1.25rem;

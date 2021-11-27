@@ -317,6 +317,39 @@ nav {
   }
 }
 
+#overview {
+  display: flex;
+  flex-flow: column wrap;
+  
+
+  figure {
+    order: 1;
+  }
+
+  .caption {
+    @include px-20;
+    order: 2;
+    margin-top: 1.25rem;
+
+    h1 {
+      font: $heading-2;
+    }
+
+    .info {
+      margin-top: .625rem;
+      font: $small;
+
+      a {color: $red;}
+      span {
+        display: inline-block;
+        margin: 0 .313rem;
+
+        &:last-child {margin: 0;}
+      }
+    }
+  }
+}
+
 footer {
   background: $white-2;
   padding: 1.25rem;
