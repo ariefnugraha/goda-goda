@@ -524,6 +524,10 @@ footer .copyright {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
+  #today {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
   #today .card {
     width: calc((100% / 4) - 1.25rem);
     margin-right: 1.25rem;
