@@ -5,6 +5,7 @@ $red: #c61214;
 $black: #2c2c2c;
 $gray: #e1e1e1;
 $white: #fff;
+$white-2: #fafafa;
 
 //fonts
 $heading-1: normal normal 600 2.5rem/140% "Poppins", sans-serif;
@@ -271,6 +272,7 @@ nav {
   background: $red;
   color: $white;
   position: relative;
+  overflow: hidden;
 
   &::before {
     content: "";
@@ -312,6 +314,82 @@ nav {
       width: 50%;
       margin-bottom: 1.25rem;
     }
+  }
+}
+
+footer {
+  background: $white-2;
+  padding: 1.25rem;
+
+  .content {
+    display: flex;
+    flex-flow: column wrap;
+    padding-bottom: 1.25rem;
+    border-bottom: solid 1px $gray;
+
+    & > div {
+      margin-bottom: 1.875rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .company {
+      img {
+        width: 80%;
+      }
+    }
+
+    .contact {
+      .title {
+        font-weight: bold;
+        color: $red;
+      }
+
+      p {
+        margin-bottom: 0.625rem;
+
+        i {
+          color: $red;
+        }
+      }
+
+      a {
+        display: inline-block;
+        margin-right: 0.625rem;
+        color: $red;
+      }
+    }
+
+    .newsletter {
+      .title {
+        font-weight: bold;
+        color: $red;
+      }
+      form {
+        position: relative;
+        margin-top: 0.625rem;
+        input {
+          width: 100%;
+        }
+
+        button {
+          width: 100%;
+          margin-top: 0.625rem;
+          background: $red;
+          color: $white;
+          border-radius: 5px;
+          padding: 0.625rem 1.25rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    margin-top: 1.25rem;
+    text-align: center;
+    font: $small;
   }
 }
 
@@ -414,6 +492,26 @@ nav {
       width: 20%;
     }
   }
+
+  footer {
+    .content {
+      flex-flow: row wrap;
+
+      & > div {
+        width: calc((100% / 3) - 0.85rem);
+        margin-bottom: 0;
+      }
+
+      .contact {
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+
+        p {
+          margin-bottom: 1.25rem;
+        }
+      }
+    }
+  }
 }
 
 // DESKTOP
@@ -477,12 +575,59 @@ nav {
       }
     }
   }
+
+  footer {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    .content {
+      padding-left: 7rem;
+      padding-right: 7rem;
+
+      .contact p {
+        margin-bottom: 0.625rem;
+      }
+      .newsletter {
+        form {
+          input {
+            padding-top: 0.938rem;
+            padding-bottom: 0.938rem;
+          }
+          button {
+            width: auto;
+            background: transparent;
+            cursor: pointer;
+            position: absolute;
+            top: -5px;
+            right: 0px;
+            color: $red;
+            span {
+              display: none;
+            }
+
+            i {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
+// SMALL DESKTOP
+@media screen and (min-width: 992px) and (max-width: 1300px) {
+  #list-categories .list-item figure {
+    height: 10rem;
+  }
+}
+
+// LARGE DESKTOP
 @media screen and (min-width: 1700px) {
   #list-categories {
-
-    &::before, &::after {
+    &::before,
+    &::after {
       width: 18.75rem;
       height: 18.75rem;
     }
@@ -491,9 +636,12 @@ nav {
       right: -6.25rem;
     }
 
-    
     .list-item figure {
       height: 17.5rem;
     }
-  } 
+  }
+
+  footer .content .company img {
+    width: 50%;
+  }
 }

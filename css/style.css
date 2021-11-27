@@ -262,6 +262,7 @@ nav ul li button {
   background: #c61214;
   color: #fff;
   position: relative;
+  overflow: hidden;
 }
 
 #list-categories::before {
@@ -310,6 +311,84 @@ nav ul li button {
 #list-categories .list-item .card-2 {
   width: 50%;
   margin-bottom: 1.25rem;
+}
+
+footer {
+  background: #fafafa;
+  padding: 1.25rem;
+}
+
+footer .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  padding-bottom: 1.25rem;
+  border-bottom: solid 1px #e1e1e1;
+}
+
+footer .content > div {
+  margin-bottom: 1.875rem;
+}
+
+footer .content > div:last-child {
+  margin-bottom: 0;
+}
+
+footer .content .company img {
+  width: 80%;
+}
+
+footer .content .contact .title {
+  font-weight: bold;
+  color: #c61214;
+}
+
+footer .content .contact p {
+  margin-bottom: 0.625rem;
+}
+
+footer .content .contact p i {
+  color: #c61214;
+}
+
+footer .content .contact a {
+  display: inline-block;
+  margin-right: 0.625rem;
+  color: #c61214;
+}
+
+footer .content .newsletter .title {
+  font-weight: bold;
+  color: #c61214;
+}
+
+footer .content .newsletter form {
+  position: relative;
+  margin-top: 0.625rem;
+}
+
+footer .content .newsletter form input {
+  width: 100%;
+}
+
+footer .content .newsletter form button {
+  width: 100%;
+  margin-top: 0.625rem;
+  background: #c61214;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.625rem 1.25rem;
+  font-weight: bold;
+}
+
+footer .copyright {
+  margin-top: 1.25rem;
+  text-align: center;
+  font: normal normal normal 0.75rem/140% "Poppins", sans-serif;
 }
 
 @media screen and (min-width: 768px) {
@@ -399,6 +478,23 @@ nav ul li button {
   #list-categories .list-item .card-2 {
     width: 20%;
   }
+  footer .content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  footer .content > div {
+    width: calc((100% / 3) - 0.85rem);
+    margin-bottom: 0;
+  }
+  footer .content .contact {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+  footer .content .contact p {
+    margin-bottom: 1.25rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -452,6 +548,44 @@ nav ul li button {
   #list-categories .list-item figure {
     height: 15rem;
   }
+  footer {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  footer .content {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+  footer .content .contact p {
+    margin-bottom: 0.625rem;
+  }
+  footer .content .newsletter form input {
+    padding-top: 0.938rem;
+    padding-bottom: 0.938rem;
+  }
+  footer .content .newsletter form button {
+    width: auto;
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: -5px;
+    right: 0px;
+    color: #c61214;
+  }
+  footer .content .newsletter form button span {
+    display: none;
+  }
+  footer .content .newsletter form button i {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1300px) {
+  #list-categories .list-item figure {
+    height: 10rem;
+  }
 }
 
 @media screen and (min-width: 1700px) {
@@ -464,6 +598,9 @@ nav ul li button {
   }
   #list-categories .list-item figure {
     height: 17.5rem;
+  }
+  footer .content .company img {
+    width: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */
