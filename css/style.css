@@ -725,6 +725,19 @@ footer .copyright {
     font: normal normal normal 1rem/140% "Poppins", sans-serif;
     font-weight: 600;
   }
+  #ingredient-how-to-make .ingredient .list-item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  #ingredient-how-to-make .ingredient .list-item p {
+    width: 50%;
+  }
+  #ingredient-how-to-make .ingredient .list-item p:nth-child(odd) {
+    width: calc(50% - 1.25rem);
+    margin-right: 1.25rem;
+  }
   footer .content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -841,6 +854,22 @@ footer .copyright {
   }
   #overview .see-recipe {
     padding: .625rem 1.25rem;
+  }
+  #ingredient-how-to-make {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  #ingredient-how-to-make .ingredient {
+    width: 50%;
+  }
+  #ingredient-how-to-make .how-to-make {
+    width: calc(50%  - 1.25rem);
+    margin-left: 1.25rem;
+    margin-top: 0;
   }
   footer {
     padding-top: 1.875rem;
