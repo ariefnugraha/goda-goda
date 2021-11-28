@@ -429,6 +429,113 @@ nav ul li button {
   padding: 0.625rem 1.25rem;
 }
 
+#ingredient-how-to-make {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  margin: 1.875rem 0;
+  padding: 0 1.25rem;
+}
+
+#ingredient-how-to-make .ingredient .title {
+  font: normal normal 600 1.25rem/140% "Poppins", sans-serif;
+  color: #c61214;
+}
+
+#ingredient-how-to-make .ingredient .list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  margin-top: 1.25rem;
+}
+
+#ingredient-how-to-make .ingredient .list-item p {
+  position: relative;
+  padding-left: 1.875rem;
+  margin-bottom: 0.625rem;
+}
+
+#ingredient-how-to-make .ingredient .list-item p:last-child {
+  margin-bottom: 0;
+}
+
+#ingredient-how-to-make .ingredient .list-item p::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 0.938rem;
+  height: 0.938rem;
+  background: #c61214;
+  border-radius: 50%;
+}
+
+#ingredient-how-to-make .how-to-make {
+  margin-top: 1.875rem;
+}
+
+#ingredient-how-to-make .how-to-make .title {
+  font: normal normal 600 1.25rem/140% "Poppins", sans-serif;
+  color: #c61214;
+}
+
+#ingredient-how-to-make .how-to-make .list-item {
+  margin-top: 1.25rem;
+}
+
+#ingredient-how-to-make .how-to-make .list-item p {
+  margin-left: 2.5rem;
+  margin-bottom: .625rem;
+  position: relative;
+}
+
+#ingredient-how-to-make .how-to-make .list-item p::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #c61214;
+  display: block;
+  position: absolute;
+  top: .313rem;
+  left: -1.875rem;
+}
+
+#ingredient-how-to-make .how-to-make .list-item p::after {
+  content: "";
+  width: 2px;
+  height: 90%;
+  border-left: dotted 2px #c61214;
+  display: block;
+  position: absolute;
+  left: -1.5rem;
+  top: 2rem;
+}
+
+#ingredient-how-to-make .how-to-make .list-item p:last-child {
+  margin-bottom: 0;
+}
+
+#ingredient-how-to-make .how-to-make .list-item p:last-child::after {
+  display: none;
+}
+
+#ingredient-how-to-make .how-to-make .list-item p span {
+  font: normal normal 600 1.25rem/140% "Poppins", sans-serif;
+  color: #c61214;
+  display: inline-block;
+  margin-right: 0.625rem;
+}
+
 footer {
   background: #fafafa;
   padding: 1.25rem;
