@@ -506,6 +506,42 @@ nav {
   }
 }
 
+#category-banner {
+  height: 30rem;
+  background: url("../images/bg-category-mobile.png") no-repeat;
+  background-size: cover;
+  padding: 5rem 1.5rem;
+  
+  p {
+    margin-top: 1.25rem;
+  }
+}
+
+#tab-menu {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-bottom: 1.25rem;
+  margin-top: 1.875rem;
+  margin-bottom: 1.25rem;
+  white-space: nowrap;
+  overflow-x: auto;
+  button {
+    padding: .625rem 1.25rem;
+    border-radius: 100px;
+    color: $red;
+    border: solid 1px $red;
+    margin: 0 .625rem 0 0;
+
+    &.active {
+      background: $red;
+      font-weight: 600;
+      color: $white;
+    }
+    &:first-child {margin-left: 0;}
+    &:last-child {margin-right: 0;}
+  }
+}
+
 footer {
   background: $white-2;
   padding: 1.25rem;
@@ -723,6 +759,13 @@ footer {
 
   #other-recipes {margin-bottom: 1.875rem;}
 
+  #category-banner {
+    height: 30rem;
+    padding: 5rem 2.5rem;
+    background-position: 50%;
+    background-size: cover;
+  }
+
   footer {
     .content {
       flex-flow: row wrap;
@@ -866,6 +909,22 @@ footer {
 
   #other-recipes {margin-bottom: 1.875rem;}
 
+  #category-banner {
+    position: relative;
+    background: url("../images/bg-category.png") no-repeat;
+    background-size: cover;
+
+    div {
+      position: absolute;
+      top: 50%;
+      right: 6rem;
+      transform: translateY(-70%);
+      width: 30%;
+
+      h1 {font: $heading-1;}
+    }
+  }
+
   footer {
     padding-top: 1.875rem;
     padding-bottom: 1.875rem;
@@ -911,6 +970,10 @@ footer {
   #list-categories .list-item figure {
     height: 10rem;
   }
+
+  #category-banner {
+    background-position-x: 50%;
+  }
 }
 
 // LARGE DESKTOP
@@ -947,6 +1010,10 @@ footer {
     figure {
       width: 55%;
     }
+  }
+
+  #category-banner div {
+    right: 20rem;
   }
 
   footer {

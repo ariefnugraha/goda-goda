@@ -536,6 +536,49 @@ nav ul li button {
   margin-right: 0.625rem;
 }
 
+#category-banner {
+  height: 30rem;
+  background: url("../images/bg-category-mobile.png") no-repeat;
+  background-size: cover;
+  padding: 5rem 1.5rem;
+}
+
+#category-banner p {
+  margin-top: 1.25rem;
+}
+
+#tab-menu {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-bottom: 1.25rem;
+  margin-top: 1.875rem;
+  margin-bottom: 1.25rem;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+#tab-menu button {
+  padding: .625rem 1.25rem;
+  border-radius: 100px;
+  color: #c61214;
+  border: solid 1px #c61214;
+  margin: 0 .625rem 0 0;
+}
+
+#tab-menu button.active {
+  background: #c61214;
+  font-weight: 600;
+  color: #fff;
+}
+
+#tab-menu button:first-child {
+  margin-left: 0;
+}
+
+#tab-menu button:last-child {
+  margin-right: 0;
+}
+
 footer {
   background: #fafafa;
   padding: 1.25rem;
@@ -741,6 +784,12 @@ footer .copyright {
   #other-recipes {
     margin-bottom: 1.875rem;
   }
+  #category-banner {
+    height: 30rem;
+    padding: 5rem 2.5rem;
+    background-position: 50%;
+    background-size: cover;
+  }
   footer .content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -874,6 +923,22 @@ footer .copyright {
   #other-recipes {
     margin-bottom: 1.875rem;
   }
+  #category-banner {
+    position: relative;
+    background: url("../images/bg-category.png") no-repeat;
+    background-size: cover;
+  }
+  #category-banner div {
+    position: absolute;
+    top: 50%;
+    right: 6rem;
+    -webkit-transform: translateY(-70%);
+            transform: translateY(-70%);
+    width: 30%;
+  }
+  #category-banner div h1 {
+    font: normal normal 600 2.5rem/140% "Poppins", sans-serif;
+  }
   footer {
     padding-top: 1.875rem;
     padding-bottom: 1.875rem;
@@ -912,6 +977,9 @@ footer .copyright {
   #list-categories .list-item figure {
     height: 10rem;
   }
+  #category-banner {
+    background-position-x: 50%;
+  }
 }
 
 @media screen and (min-width: 1700px) {
@@ -936,6 +1004,9 @@ footer .copyright {
   }
   #overview figure {
     width: 55%;
+  }
+  #category-banner div {
+    right: 20rem;
   }
   footer .content {
     -webkit-box-align: center;
