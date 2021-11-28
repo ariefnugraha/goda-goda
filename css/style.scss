@@ -249,7 +249,7 @@ nav {
   }
 }
 
-#today {
+#today, #other-recipes {
   @include px-20;
   margin-top: 1.875rem;
 
@@ -774,16 +774,13 @@ footer {
     }
   }
 
-  #today {
+  #today, #other-recipes {
     padding-left: 5rem;
     padding-right: 5rem;
     .card {
       width: calc((100% / 4) - 1.25rem);
       margin-right: 1.25rem;
 
-      &:nth-child(odd) {
-        margin-right: 0;
-      }
 
       &:nth-child(4n + 4) {
         margin-right: 0;

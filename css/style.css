@@ -231,18 +231,18 @@ nav ul li button {
   margin-top: 0.5rem;
 }
 
-#today {
+#today, #other-recipes {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   margin-top: 1.875rem;
 }
 
-#today .title {
+#today .title, #other-recipes .title {
   font: normal normal 600 1.25rem/140% "Poppins", sans-serif;
   font-weight: bold;
 }
 
-#today .list-item {
+#today .list-item, #other-recipes .list-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -784,18 +784,15 @@ footer .copyright {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
-  #today {
+  #today, #other-recipes {
     padding-left: 5rem;
     padding-right: 5rem;
   }
-  #today .card {
+  #today .card, #other-recipes .card {
     width: calc((100% / 4) - 1.25rem);
     margin-right: 1.25rem;
   }
-  #today .card:nth-child(odd) {
-    margin-right: 0;
-  }
-  #today .card:nth-child(4n + 4) {
+  #today .card:nth-child(4n + 4), #other-recipes .card:nth-child(4n + 4) {
     margin-right: 0;
   }
   #list-categories {
