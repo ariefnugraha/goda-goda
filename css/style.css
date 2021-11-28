@@ -939,6 +939,15 @@ footer .copyright {
   #category-banner div h1 {
     font: normal normal 600 2.5rem/140% "Poppins", sans-serif;
   }
+  #tab-menu {
+    white-space: normal;
+    overflow-x: hidden;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  #tab-menu button {
+    padding: .625rem;
+  }
   footer {
     padding-top: 1.875rem;
     padding-bottom: 1.875rem;
@@ -980,6 +989,9 @@ footer .copyright {
   #category-banner {
     background-position-x: 50%;
   }
+  #tab-menu button {
+    padding: .625rem .313rem;
+  }
 }
 
 @media screen and (min-width: 1700px) {
@@ -1007,6 +1019,20 @@ footer .copyright {
   }
   #category-banner div {
     right: 20rem;
+  }
+  #tab-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  #tab-menu button {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
   footer .content {
     -webkit-box-align: center;

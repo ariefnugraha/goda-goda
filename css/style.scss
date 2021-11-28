@@ -925,6 +925,17 @@ footer {
     }
   }
 
+  #tab-menu {
+    white-space: normal;
+    overflow-x: hidden;
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+    button {
+      padding: .625rem;
+    }
+  }
+
   footer {
     padding-top: 1.875rem;
     padding-bottom: 1.875rem;
@@ -974,6 +985,8 @@ footer {
   #category-banner {
     background-position-x: 50%;
   }
+
+  #tab-menu button {padding: .625rem .313rem;}
 }
 
 // LARGE DESKTOP
@@ -1014,6 +1027,15 @@ footer {
 
   #category-banner div {
     right: 20rem;
+  }
+
+  #tab-menu {
+    display: flex;
+    flex-flow: row wrap;
+
+    button {
+      flex-grow: 1;
+    }
   }
 
   footer {
