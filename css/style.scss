@@ -683,6 +683,31 @@ footer {
     }
   }
 
+  #overview {
+    figure {
+      height: 25rem;
+    }
+    
+    .caption {
+      .skill {
+        display: flex;
+        flex-flow: row wrap;
+
+        div:nth-child(2) {
+          @include mx-20;
+        }
+      }
+
+      .see-recipe {
+        width: auto;
+        display: inline-block;
+        padding: 1.25rem;
+        font: $regular;
+        font-weight: 600;
+      }
+    }
+  }
+
   footer {
     .content {
       flex-flow: row wrap;
@@ -783,6 +808,34 @@ footer {
     }
   }
 
+  #overview {
+    flex-flow: row wrap;
+
+    .caption {
+      order: 1;
+      width: 50%;
+      align-self: center;
+      padding-left: 5rem;
+
+      h1 {
+        font: $heading-1;
+      }
+
+      .info {font: $regular;}
+    }
+
+    figure {
+      width: 50%;
+      height: 40rem;
+      border-radius: initial;
+      img {border-radius: initial;}
+    }
+
+    .see-recipe {
+      padding: .625rem 1.25rem;
+    }
+  }
+
   footer {
     padding-top: 1.875rem;
     padding-bottom: 1.875rem;
@@ -853,6 +906,16 @@ footer {
 
     .list-item figure {
       height: 17.5rem;
+    }
+  }
+
+  #overview {
+    .caption {
+      width: 45%;
+    }
+
+    figure {
+      width: 55%;
     }
   }
 

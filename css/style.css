@@ -702,6 +702,29 @@ footer .copyright {
   #list-categories .list-item .card-2 {
     width: 20%;
   }
+  #overview figure {
+    height: 25rem;
+  }
+  #overview .caption .skill {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  #overview .caption .skill div:nth-child(2) {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+  #overview .caption .see-recipe {
+    width: auto;
+    display: inline-block;
+    padding: 1.25rem;
+    font: normal normal normal 1rem/140% "Poppins", sans-serif;
+    font-weight: 600;
+  }
   footer .content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -786,6 +809,39 @@ footer .copyright {
   #list-categories .list-item figure {
     height: 15rem;
   }
+  #overview {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  #overview .caption {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 50%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding-left: 5rem;
+  }
+  #overview .caption h1 {
+    font: normal normal 600 2.5rem/140% "Poppins", sans-serif;
+  }
+  #overview .caption .info {
+    font: normal normal normal 1rem/140% "Poppins", sans-serif;
+  }
+  #overview figure {
+    width: 50%;
+    height: 40rem;
+    border-radius: initial;
+  }
+  #overview figure img {
+    border-radius: initial;
+  }
+  #overview .see-recipe {
+    padding: .625rem 1.25rem;
+  }
   footer {
     padding-top: 1.875rem;
     padding-bottom: 1.875rem;
@@ -842,6 +898,12 @@ footer .copyright {
   }
   #list-categories .list-item figure {
     height: 17.5rem;
+  }
+  #overview .caption {
+    width: 45%;
+  }
+  #overview figure {
+    width: 55%;
   }
   footer .content {
     -webkit-box-align: center;
