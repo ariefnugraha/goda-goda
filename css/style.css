@@ -343,7 +343,7 @@ nav ul li button {
 }
 
 #overview .caption .info {
-  margin-top: .625rem;
+  margin-top: 0.625rem;
   font: normal normal normal 0.75rem/140% "Poppins", sans-serif;
 }
 
@@ -353,11 +353,80 @@ nav ul li button {
 
 #overview .caption .info span {
   display: inline-block;
-  margin: 0 .313rem;
+  margin: 0 0.313rem;
 }
 
 #overview .caption .info span:last-child {
   margin: 0;
+}
+
+#overview .caption p {
+  margin: 1.25rem 0;
+}
+
+#overview .caption p #load-more {
+  color: #c61214;
+  font-weight: bold;
+  cursor: pointer;
+  font: normal normal normal 1rem/140% "Poppins", sans-serif;
+  padding: 0;
+}
+
+#overview .caption p #more.hide {
+  display: none;
+}
+
+#overview .caption p #more.show {
+  display: block;
+}
+
+#overview .caption .skill {
+  color: #c61214;
+}
+
+#overview .caption .skill > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+#overview .caption .skill .icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: dotted 2px #c61214;
+  position: relative;
+  margin-right: 0.625rem;
+}
+
+#overview .caption .skill .icon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#overview .caption .see-recipe {
+  display: block;
+  width: 100%;
+  border-radius: 80px;
+  background: #c61214;
+  -webkit-box-shadow: 0px 16px 24px rgba(198, 18, 20, 0.2), 0px 2px 6px rgba(198, 18, 20, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 16px 24px rgba(198, 18, 20, 0.2), 0px 2px 6px rgba(198, 18, 20, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  color: #fff;
+  font: normal normal normal 0.75rem/140% "Poppins", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  padding: 0.625rem 1.25rem;
 }
 
 footer {
