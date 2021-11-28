@@ -22,17 +22,19 @@ document.querySelector("#open-menu").addEventListener("click", () => {
 });
 
 // HANDLE LOAD MORE
-let loadMore = document.getElementById("load-more");
-let moreText = document.getElementById("more");
+if (document.getElementById("load-more").innerHTML.length > 0) {
+  let loadMore = document.getElementById("load-more");
+  let moreText = document.getElementById("more");
 
-loadMore.addEventListener("click", () => {
-  if (moreText.classList.contains('hide')) {
-    moreText.classList.remove('hide');
-    moreText.classList.add('show');
-    loadMore.innerText = "Kurangi"
-  } else {
-    moreText.classList.add('hide');
-    moreText.classList.remove('show');
-    loadMore.innerText = "Lebih Banyak";
-  }
-});
+  loadMore.addEventListener("click", () => {
+    if (moreText.classList.contains("hide")) {
+      moreText.classList.remove("hide");
+      moreText.classList.add("show");
+      loadMore.innerText = "Kurangi";
+    } else {
+      moreText.classList.add("hide");
+      moreText.classList.remove("show");
+      loadMore.innerText = "Lebih Banyak";
+    }
+  });
+}
