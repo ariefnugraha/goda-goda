@@ -738,6 +738,9 @@ footer .copyright {
     width: calc(50% - 1.25rem);
     margin-right: 1.25rem;
   }
+  #other-recipes {
+    margin-bottom: 1.875rem;
+  }
   footer .content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -867,6 +870,9 @@ footer .copyright {
     width: calc(50%  - 1.25rem);
     margin-left: 1.25rem;
     margin-top: 0;
+  }
+  #other-recipes {
+    margin-bottom: 1.875rem;
   }
   footer {
     padding-top: 1.875rem;
