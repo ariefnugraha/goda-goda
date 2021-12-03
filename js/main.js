@@ -22,7 +22,7 @@ document.querySelector("#open-menu").addEventListener("click", () => {
 });
 
 // HANDLE LOAD MORE
-if (document.getElementById("load-more").innerHTML.length > 0) {
+if (document.getElementById("load-more") !== null) {
   let loadMore = document.getElementById("load-more");
   let moreText = document.getElementById("more");
 
@@ -37,4 +37,28 @@ if (document.getElementById("load-more").innerHTML.length > 0) {
       loadMore.innerText = "Lebih Banyak";
     }
   });
+}
+
+// HANDLE TAB CATEGORY
+if (document.getElementById('tab-list') !== null && document.getElementById('tab-list').innerHTML.length > 0) {
+  let tabButton = document.querySelectorAll('.tab-button');
+  let tabContent = document.querySelectorAll('.tab-content');
+
+
+  for(let i = 0; i < tabButton.length; i++) {
+    
+    tabButton[i].addEventListener('click', function(event) {
+      let getId = tabButton[i].getAttribute("id");
+
+      for(let j = 0; j < tabContent.length; j++) {
+        tabContent[j].classList.remove('active');
+        tabButton[j].classList.remove('active');
+      }
+      
+    
+
+      tabButton[i].classList.add('active');
+      document.getElementById(`${getId}-tab`).classList.add('active')
+    })
+  }
 }
