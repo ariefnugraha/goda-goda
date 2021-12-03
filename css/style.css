@@ -231,18 +231,18 @@ nav ul li button {
   margin-top: 0.5rem;
 }
 
-#today, #other-recipes {
+#today, #other-recipes, .tab-content, #search-result {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   margin-top: 1.875rem;
 }
 
-#today .title, #other-recipes .title {
+#today .title, #other-recipes .title, .tab-content .title, #search-result .title {
   font: normal normal 600 1.25rem/140% "Poppins", sans-serif;
   font-weight: bold;
 }
 
-#today .list-item, #other-recipes .list-item {
+#today .list-item, #other-recipes .list-item, .tab-content .list-item, #search-result .list-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -563,6 +563,7 @@ nav ul li button {
   color: #c61214;
   border: solid 1px #c61214;
   margin: 0 .625rem 0 0;
+  cursor: pointer;
 }
 
 #tab-menu button.active {
@@ -577,6 +578,64 @@ nav ul li button {
 
 #tab-menu button:last-child {
   margin-right: 0;
+}
+
+#tab-list .tab-content {
+  display: none;
+}
+
+#tab-list .tab-content.active {
+  display: block;
+}
+
+#search-banner {
+  position: relative;
+  background: url("../images/bg-search-mobile.jpg") no-repeat center;
+  height: 11.25rem;
+}
+
+#search-banner div {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  -webkit-transform: translate(25%, 100%);
+          transform: translate(25%, 100%);
+}
+
+#search-banner div form {
+  position: relative;
+  -webkit-box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+}
+
+#search-banner div form input {
+  padding: 1.25rem;
+  border: none;
+}
+
+#search-banner div form button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #c61214;
+}
+
+#search-title {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+#search-title h1 {
+  display: inline-block;
+  font: normal normal 600 1.25rem/140% "Poppins", sans-serif;
+}
+
+#search-result {
+  margin-bottom: 1.875rem;
 }
 
 footer {
@@ -790,6 +849,18 @@ footer .copyright {
     background-position: 50%;
     background-size: cover;
   }
+  #search-banner {
+    background: url("../images/bg-search.png") no-repeat center;
+    height: 16rem;
+  }
+  #search-banner div {
+    width: 25rem;
+    -webkit-transform: translate(45%, 100%);
+            transform: translate(45%, 100%);
+  }
+  #search-banner div form input {
+    width: 100%;
+  }
   footer .content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -836,15 +907,15 @@ footer .copyright {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
-  #today, #other-recipes {
+  #today, #other-recipes, .tab-content, #search-result {
     padding-left: 5rem;
     padding-right: 5rem;
   }
-  #today .card, #other-recipes .card {
+  #today .card, #other-recipes .card, .tab-content .card, #search-result .card {
     width: calc((100% / 4) - 1.25rem);
     margin-right: 1.25rem;
   }
-  #today .card:nth-child(4n + 4), #other-recipes .card:nth-child(4n + 4) {
+  #today .card:nth-child(4n + 4), #other-recipes .card:nth-child(4n + 4), .tab-content .card:nth-child(4n + 4), #search-result .card:nth-child(4n + 4) {
     margin-right: 0;
   }
   #list-categories {
@@ -947,6 +1018,19 @@ footer .copyright {
   }
   #tab-menu button {
     padding: .625rem;
+  }
+  #search-banner {
+    background: url("../images/bg-search.png") no-repeat center;
+    height: 16rem;
+  }
+  #search-banner div {
+    width: 40%;
+    -webkit-transform: translate(73%, 100%);
+            transform: translate(73%, 100%);
+  }
+  #search-banner div form input {
+    width: 100%;
+    font: normal normal normal 1rem/140% "Poppins", sans-serif;
   }
   footer {
     padding-top: 1.875rem;

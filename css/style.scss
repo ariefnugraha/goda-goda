@@ -249,7 +249,7 @@ nav {
   }
 }
 
-#today, #other-recipes {
+#today, #other-recipes, .tab-content, #search-result {
   @include px-20;
   margin-top: 1.875rem;
 
@@ -531,7 +531,7 @@ nav {
     color: $red;
     border: solid 1px $red;
     margin: 0 .625rem 0 0;
-
+    cursor: pointer;
     &.active {
       background: $red;
       font-weight: 600;
@@ -540,6 +540,58 @@ nav {
     &:first-child {margin-left: 0;}
     &:last-child {margin-right: 0;}
   }
+}
+
+#tab-list {
+  .tab-content {
+    display: none;
+
+    &.active {display: block;}
+  }
+}
+
+#search-banner {
+  position: relative;
+  background: url("../images/bg-search-mobile.jpg")  no-repeat center;
+  height: 11.25rem;
+  div {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    transform: translate(25%, 100%);
+
+    form {
+      position: relative;
+      box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+
+      input {
+        padding: 1.25rem;
+        border: none;
+      }
+      button {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        color: $red;
+      }
+    }
+  }
+}
+
+#search-title {
+  @include px-20;
+  margin-top: 4rem;
+  text-align: center;
+
+  h1 {
+    display: inline-block;
+    font: $heading-2;
+  }
+}
+
+#search-result {
+  margin-bottom: 1.875rem;
 }
 
 footer {
@@ -766,6 +818,18 @@ footer {
     background-size: cover;
   }
 
+  #search-banner {
+    background: url("../images/bg-search.png") no-repeat center;
+    height: 16rem;
+
+    div {
+      width: 25rem;
+      transform: translate(45%, 100%);
+
+      form input {width: 100%;}
+    }
+  }
+
   footer {
     .content {
       flex-flow: row wrap;
@@ -819,9 +883,10 @@ footer {
     }
   }
 
-  #today, #other-recipes {
+  #today, #other-recipes, .tab-content, #search-result {
     padding-left: 5rem;
     padding-right: 5rem;
+
     .card {
       width: calc((100% / 4) - 1.25rem);
       margin-right: 1.25rem;
@@ -933,6 +998,21 @@ footer {
 
     button {
       padding: .625rem;
+    }
+  }
+
+  #search-banner {
+    background: url("../images/bg-search.png") no-repeat center;
+    height: 16rem;
+
+    div {
+      width: 40%;
+      transform: translate(73%, 100%);
+
+      form input {
+        width: 100%;
+        font: $regular;
+      }
     }
   }
 
