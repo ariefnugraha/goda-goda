@@ -49,6 +49,10 @@ $small: normal normal normal 0.75rem/140% "Poppins", sans-serif;
   padding-bottom: 1.25rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font: $regular;
   margin: 0;
