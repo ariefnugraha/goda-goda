@@ -1015,6 +1015,7 @@ footer .copyright {
     overflow-x: hidden;
     padding-left: 5rem;
     padding-right: 5rem;
+    padding-bottom: 0;
   }
   #tab-menu button {
     padding: .625rem;
@@ -1074,7 +1075,11 @@ footer .copyright {
     background-position-x: 50%;
   }
   #tab-menu button {
-    padding: .625rem .313rem;
+    margin-bottom: 1.25rem;
+    padding: .625rem;
+  }
+  .card .card-desc .card-info p {
+    margin-bottom: .625rem;
   }
 }
 
