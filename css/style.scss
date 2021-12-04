@@ -547,6 +547,7 @@ nav {
 }
 
 #tab-list {
+  margin-bottom: 2.5rem;
   .tab-content {
     display: none;
 
@@ -592,10 +593,6 @@ nav {
     display: inline-block;
     font: $heading-2;
   }
-}
-
-#search-result {
-  margin-bottom: 1.875rem;
 }
 
 footer {

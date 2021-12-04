@@ -584,6 +584,10 @@ nav ul li button {
   margin-right: 0;
 }
 
+#tab-list {
+  margin-bottom: 2.5rem;
+}
+
 #tab-list .tab-content {
   display: none;
 }
@@ -636,10 +640,6 @@ nav ul li button {
 #search-title h1 {
   display: inline-block;
   font: normal normal 600 1.25rem/140% "Poppins", sans-serif;
-}
-
-#search-result {
-  margin-bottom: 1.875rem;
 }
 
 footer {
